@@ -1,0 +1,8 @@
+# Binder (mybinder.org / repo2docker) build configuration.
+#
+# Installing the project itself (".") makes the `shrubbery` package importable
+# in appac_demo.ipynb and pulls in its runtime dependencies declared in
+# pyproject.toml (numpy, scipy, pandas, pyarrow, matplotlib). A bare
+# pyproject.toml is not reliably detected by repo2docker, so this file makes
+# the Binder environment build reproducibly.
+.
